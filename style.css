@@ -1,0 +1,19 @@
+body.light { background: #ffffff; color: #0d3b66; font-family: Arial, sans-serif; }
+body.dark { background: #0d3b66; color: #ffffff; }
+
+header { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #00aaff; color: #fff; }
+header nav a { margin: 0 10px; text-decoration: none; color: #fff; }
+header nav a:hover { text-decoration: underline; }
+
+main { max-width: 900px; margin: 20px auto; padding: 0 10px; }
+.card { background: #f0f8ff; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+
+.ai-form label { display: block; margin-top: 10px; }
+.ai-form input, .ai-form select { width: 100%; padding: 5px; margin-top: 5px; }
+.ai-form button { margin-top: 15px; padding: 10px 20px; background: #0077cc; color: #fff; border: none; cursor: pointer; border-radius: 5px; }
+.ai-form button:hover { background: #005fa3; }
+
+.icon-small { width: 24px; vertical-align: middle; margin-left: 5px; }
+.official-list li { margin: 5px 0; }
+
+.ai-result { margin-top: 15px; padding: 10px; background: #e0f7ff; border-radius: 5px; }
