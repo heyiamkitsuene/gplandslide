@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>山泥傾瀉 AI 監測平台</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body class="light">
+<header>
+  <div class="logo">🏔️ Landslide AI</div>
+  <nav>
+    <a href="#home">首頁</a>
+    <a href="#ai">AI 判斷</a>
+    <a href="#news">最新新聞</a>
+    <a href="#official">官方網站</a>
+    <a href="#settings">設置</a>
+    <a href="#about">製作</a>
+  </nav>
+  <button id="themeToggle">切換亮/暗模式</button>
+</header>
+
+<main>
+  <section id="home" class="card">
+    <h1>山泥傾瀉 AI 監測平台</h1>
+    <p>使用人工智能和真實天氣數據，提升山泥傾瀉風險識別效率。</p>
+    <img src="images/home.png" alt="首頁圖示" class="icon-small">
+  </section>
+
+  <section id="ai" class="card">
+    <h2>📸 AI 判斷坡體風險</h2>
+    <div class="ai-form">
+      <label>坡度角（度）<img src="images/slope.png" class="icon-small"></label>
+      <input type="number" id="slope" value="30">
+      <label>土壤類型<img src="images/soil.png" class="icon-small"></label>
+      <select id="soil">
+        <option>黏土</option>
+        <option>砂土</option>
+        <option>岩石</option>
+      </select>
+      <label>含水量（%）<img src="images/water.png" class="icon-small"></label>
+      <input type="number" id="water" value="30">
+      <label>植被覆蓋率（%）<img src="images/veg.png" class="icon-small"></label>
+      <input type="number" id="veg" value="50">
+      <button id="aiRun">模擬判斷</button>
+    </div>
+    <div id="aiResult" class="ai-result"></div>
+  </section>
+
+  <section id="news" class="card">
+    <h2>📰 最新新聞</h2>
+    <ul id="newsList"></ul>
+  </section>
+
+  <section id="official" class="card">
+    <h2>官方網站</h2>
+    <ul class="official-list">
+      <li><img src="images/cedd.png" class="icon-small"> <a href="https://www.cedd.gov.hk/" target="_blank">土木工程拓展署</a></li>
+      <li><img src="images/hko.png" class="icon-small"> <a href="https://www.hko.gov.hk/" target="_blank">香港天文台</a></li>
+      <li><img src="images/news.png" class="icon-small"> <a href="https://www.news.gov.hk/" target="_blank">香港政府新聞網</a></li>
+      <li><img src="images/rss.png" class="icon-small"> <a href="https://news.rthk.hk/rss/" target="_blank">RTHK RSS</a></li>
+    </ul>
+  </section>
+
+  <section id="settings" class="card">
+    <h2>⚙️ 設置</h2>
+    <label>單位：<select id="unit"><option>度</option></select></label>
+    <label>語言：<select id="language"><option>繁體中文</option><option>English</option></select></label>
+  </section>
+
+  <section id="about" class="card">
+    <h2>👨‍💻 製作</h2>
+    <p>製作：你 / 我</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 山泥傾瀉 AI 監測平台</p>
+</footer>
+</body>
+</html>
